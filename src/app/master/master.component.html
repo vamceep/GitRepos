@@ -1,0 +1,19 @@
+<body>
+  <div class="container">
+    <div class="row col-md-12">
+      <div class="col-md-4">
+        <!-- <div *ngIf="loading">Loading...</div> -->
+        <!-- <div *ngIf="error">Error :(</div> -->
+        <div *ngFor="let item of searchresults">
+          <div className="repo">
+            <a href="{{ item.node.url }}"> {{ item.node.name }}</a>
+            <br />
+            <span> {{ item.node.description }}</span>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">"detail is here"</div>
+    </div>
+  </div>
+</body>
